@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Search App</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript File -->
+    <script type="module" src="script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+
+        <h1>CINEFIND</h1>
+
+        <p>Discover Your Favourite Movies</p>
+
+    </header>
+
+    <!-- Main Section -->
+    <main>
+
+        <section class="search-section">
+
+            <h2>Movie Search</h2>
+
+            <form id="movie-form">
+
+                <input
+                    type="text"
+                    id="movie-input"
+                    placeholder="Enter Movie Name"
+                    required
+                >
+
+                <button type="submit">
+                    Search Movie
+                </button>
+
+            </form>
+
+            <p id="status"></p>
+
+        </section>
+
+        <!-- Movie Results -->
+        <section class="results-section">
+
+            <h2 id="results-title">
+                Search Results
+            </h2>
+
+            <p id="result-count"></p>
+
+            <div id="movie-results"
+                 class="movie-grid">
+
+                <!-- Movie details displayed using JavaScript -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Movie Details Popup -->
+    <dialog id="movie-dialog">
+
+        <button id="close-dialog">
+            Close
+        </button>
+
+        <div id="movie-details">
+
+            <!-- Selected movie details displayed here -->
+
+        </div>
+
+    </dialog>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>Movie Search Application</p>
+
+    </footer>
+
+</body>
+
+</html>

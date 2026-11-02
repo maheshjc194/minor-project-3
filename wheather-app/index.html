@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript File -->
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="weather-container">
+
+        <h1>Weather App</h1>
+        <p>Check Current Weather Information</p>
+
+        <!-- Search Section -->
+        <form id="weather-form">
+
+            <input
+                type="text"
+                id="city-input"
+                placeholder="Enter City Name"
+                required
+            >
+
+            <button type="submit">Search</button>
+
+        </form>
+
+        <!-- Status Message -->
+        <p id="status"></p>
+
+        <!-- Weather Information -->
+        <div id="weather-card" class="hidden">
+
+            <h2 id="place"></h2>
+
+            <p id="date"></p>
+
+            <img id="weather-icon" alt="Weather Icon">
+
+            <h1 id="temperature"></h1>
+
+            <h3 id="condition"></h3>
+
+            <p id="feels-like"></p>
+
+            <div class="weather-details">
+
+                <div>
+                    <h3>Humidity</h3>
+                    <p id="humidity"></p>
+                </div>
+
+                <div>
+                    <h3>Wind Speed</h3>
+                    <p id="wind"></p>
+                </div>
+
+                <div>
+                    <h3>Pressure</h3>
+                    <p id="pressure"></p>
+                </div>
+
+                <div>
+                    <h3>Cloudiness</h3>
+                    <p id="clouds"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
